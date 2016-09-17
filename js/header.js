@@ -1,5 +1,5 @@
 
-fetch('https://api.github.com/rep12os/tiborsaas/experiments/contents').then(function(response) {
+fetch('https://api.github.com/repos/tiborsaas/experiments/contents').then(function(response) {
 	return response.json();
 }).then(render).catch(console.log);
 
