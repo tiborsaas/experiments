@@ -2,9 +2,52 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Tibor's experiments</title>
+	<link rel="stylesheet" href="css/common.css">
+	<link href="https://fonts.googleapis.com/css?family=Old+Standard+TT|Open+Sans" rel="stylesheet">
+	<style>
+		.bg { 
+			/* Generated with http://gradient.quasi.ink */
+			background-size: cover;
+			background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAADCAYAAABfwxXFAAAAXElEQVQIWwXBOw5AQBRA0fu8GUwk4hMdlU5iAWIPlqS0E/uSaBVoiXGO7MvoVQVjFbWGwEUYF6ORRfZ58Of1cFwvGkCRGrIqxpUJsk69386P+4VUocuFtgkp64QfWmkTbxoCGq8AAAAASUVORK5CYII=");
+		}
+
+		body {
+			font-family: 'Old Standard TT', serif;
+		}
+
+		canvas {
+			mix-blend-mode: screen;
+		}
+
+		.title {
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+
+		h1 {
+			font-size: 3rem;
+		}
+
+		p {
+			font-family: 'Open Sans', sans-serif;
+			font-size: 1.2rem;
+			margin-bottom: 1rem;
+		}
+
+	</style>
 </head>
 <body>
-	<h1>Loading...</h1>
-	<script src="js/header.js"></script>
+	<section class="bg">
+		<div class="centerize">
+			<canvas></canvas>
+		</div>
+		<div class="centerize title">
+			<h1>Experiments in generative art</h1>
+			<p>I've started to collect my 2D, 3D explorations of various ideas in this repository</p>
+			<a href="/" class="button">Get started</a>
+		</div>
+	</section>
+	<script src="js/index-anim.js"></script>
 </body>
 </html>
